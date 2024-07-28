@@ -1,0 +1,70 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"actionButtons": {
+			"commands": [
+				{
+					"name": "Flash",
+					// "name": "$(settings-gear)$(arrow-down)",
+					// "name": "$(zap)",
+					// "color": "#b0f1ff",
+					"command": "workbench.action.tasks.runTask",
+					"args": [
+						"CubeProg: Flash project (SWD)"
+					],
+					"useVsCodeApi": true,
+					"singleInstance": true,
+				},
+				{
+					"name": "Trace",
+					// "name": "$(terminal)SWO",
+					// "color": "#b0f1ff",
+					"command": "workbench.action.tasks.runTask",
+					"args": [
+						"CubeProg: Trace SWO"
+					],
+					"useVsCodeApi": true,
+					"singleInstance": true,
+				},
+				{
+					// "name": "$(settings-gear)$(arrow-down)$(terminal)",
+					"name": "Flash&Trace",
+					// "color": "#b0f1ff",
+					"command": "workbench.action.tasks.runTask",
+					"args": [
+						"CubeProg: Flash & Trace SWO"
+					],
+					"useVsCodeApi": true,
+					"singleInstance": true,
+				},
+				{
+					"name": "$(gear)CMake",
+					// "color": "#b0f1ff",
+					"command": "workbench.action.tasks.runTask",
+					"args": [
+						"Configure CMake"
+					],
+					"useVsCodeApi": true,
+					"singleInstance": true,
+				},
+				{
+					"name": "$(trash)Clean",
+					// "color": "#b0f1ff",
+					"command": "workbench.action.tasks.runTask",
+					"args": [
+						"Clean project"
+					],
+					"useVsCodeApi": true,
+					"singleInstance": true,
+				}
+			],
+			"defaultColor": "#bfd4d9",
+			"reloadButton": "$(extensions-refresh)",
+			"loadNpmCommands": false
+		}
+	}
+}
